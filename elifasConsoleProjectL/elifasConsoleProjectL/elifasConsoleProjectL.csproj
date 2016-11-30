@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="ILivable.cs" />
+    <Compile Include="Animal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
