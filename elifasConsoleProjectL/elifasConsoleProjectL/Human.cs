@@ -2,7 +2,7 @@
 
 namespace elifasConsoleProjectL
 {
-	public class Human
+	public class Human : ILivable
 	{
 		public string Name { get; set; }
 		public int Age { get; set; }
@@ -15,6 +15,11 @@ namespace elifasConsoleProjectL
 		{
 			this.Name = name;
 			this.Age = age;
+		}
+
+		public void Live()
+		{
+			Console.WriteLine($"I'm alive! #{this.Name}");
 		}
 
 		//
