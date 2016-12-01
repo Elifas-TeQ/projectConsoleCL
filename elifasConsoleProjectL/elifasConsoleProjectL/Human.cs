@@ -1,4 +1,5 @@
 ﻿using System;
+using NUnit.Framework;
 
 namespace elifasConsoleProjectL
 {
@@ -19,6 +20,8 @@ namespace elifasConsoleProjectL
 
 		public void Live()
 		{
+			if (String.IsNullOrEmpty(this.Name))
+				throw new NullReferenceException();
 			Console.WriteLine($"I'm alive! #{this.Name}");
 		}
 
